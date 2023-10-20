@@ -28,6 +28,8 @@ public class Question25 {
 		int num = sc.nextInt();
 		
 		System.out.println(magicNumber(num));
+		
+		sc.close();
 	}
 
 }
