@@ -6,7 +6,7 @@ public class Question31 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a string : ");
+		System.out.print("Enter a string : ");
 
 		String str = sc.next();
 
@@ -18,6 +18,7 @@ public class Question31 {
 				if (i == j) {
 					continue;
 				}
+				
 				else if(charStr == str.charAt(j)) {
 					count++;
 				}
