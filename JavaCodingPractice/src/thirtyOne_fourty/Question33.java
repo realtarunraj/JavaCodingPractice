@@ -31,6 +31,18 @@ public class Question33 {
 			}
 		});
 		
+		
+		System.out.println("====== Stream ==========");
+		
+		System.out.println(
+				
+				 str.chars()
+				.mapToObj(x -> String.valueOf((char)x))
+				.filter(x -> str.indexOf(x) != str.lastIndexOf(x))
+				.distinct()
+				.toList()
+		);
+		
 		sc.close();
 	}
 }
