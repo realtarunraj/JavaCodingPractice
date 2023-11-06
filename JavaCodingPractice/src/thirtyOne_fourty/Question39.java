@@ -1,7 +1,6 @@
 package thirtyOne_fourty;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -22,5 +21,7 @@ public class Question39 {
 		Collections.sort(list);
 		
 		System.out.println("Smallest Entry : " + list.get(0) + " & Largest Entry : " + list.get(list.size()-1));
+		
+		sc.close();
 	}
 }
