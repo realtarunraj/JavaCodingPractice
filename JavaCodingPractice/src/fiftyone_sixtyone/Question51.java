@@ -8,7 +8,7 @@ import java.util.Map;
 public class Question51 {
 	public static void main(String[] args) {
 
-		List<String> list = Arrays.asList("aman", "tarun", "aman", "raj", "aman", "deepak", "aman", "tarun");
+		List<String> list = Arrays.asList("aman", "tarun", "aman", "tarun", "raj", "aman", "deepak","tarun", "aman", "tarun");
 		Map<String, Integer> map = new HashMap<>();
 		
 		
@@ -21,6 +21,8 @@ public class Question51 {
 			}
 		}
 		
+		System.out.println(map);
+		
 		// Getting the maximum value
 		int max = 0;
 		for(int value : map.values()) {
@@ -29,13 +31,13 @@ public class Question51 {
 			}
 		}
 		
-		
 		// we will make a final value to match the values of map.
 		// final does not get updated. so we can use that variable inside any loop.
 		final int value = max;
+		
 		map.forEach((s, i) -> {
 			if(i == value) {
-				System.out.println(s);
+				 System.out.println(s);
 			}
 		});
 	}
