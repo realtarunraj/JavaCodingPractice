@@ -6,4 +6,5 @@
  *
  */
 module JavaCodingPractice {
+	requires jdk.httpserver;
 }
