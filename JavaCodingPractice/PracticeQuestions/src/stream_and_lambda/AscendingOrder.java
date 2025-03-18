@@ -1,0 +1,13 @@
+package stream_and_lambda;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class AscendingOrder {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>(Arrays.asList(2, 8, 12, 17, 19, 5, 7, 11, 23, 26));
+		System.out.println(list.stream().sorted().collect(Collectors.toList()));
+	}
+}
